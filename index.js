@@ -18,8 +18,13 @@ var lowercase = 'hello!'
 var mixedCase = "Hi there!"
 
 function sayHiToGrandma(string) {
-  ('${string}'.toLowerCase() === lowercase)
-    return ("I can't hear you!")
+  if ('${string}'.toLowerCase() === lowercase) {
+    return ("I can't hear you!")}
 
-  ('${string}'.toUpperCase() === uppercase)
+  else if('${string}'.toUpperCase() === uppercase){
     return ("YES INDEED!")}
+    
+  else (`${string} === mixedCase){
+    return ("I love you, too")
+  }
+}
